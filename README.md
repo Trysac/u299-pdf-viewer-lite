@@ -1,7 +1,6 @@
 # pdf-viewer-lite
 
-[![npm version](https://img.shields.io/npm/v/@trysac/pdf-viewer-lite.svg)](https://www.npmjs.com/package/@trysac/pdf-viewer-lite)
-[![license: MIT](https://img.shields.io/npm/l/@trysac/pdf-viewer-lite.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![CI](https://github.com/Trysac/u299-pdf-viewer-lite/actions/workflows/ci.yml/badge.svg)](https://github.com/Trysac/u299-pdf-viewer-lite/actions/workflows/ci.yml)
 
 Framework-free core for an accessible PDF viewer: RFC 8118 fragment parsing, page and zoom state, fit scales, keyboard map, stale-render cancelling and toolbar markup
@@ -17,9 +16,15 @@ containers are plain objects that the host wires to the real DOM.
 
 ## Install
 
+Not published to npm yet. Build it from a clone, then install it from the local path:
+
 ```sh
-npm install @trysac/pdf-viewer-lite
+git clone https://github.com/Trysac/u299-pdf-viewer-lite.git
+cd u299-pdf-viewer-lite && npm ci && npm run build
+cd ../your-project && npm install ../u299-pdf-viewer-lite
 ```
+
+Imports keep the package name: `import { ... } from "@trysac/pdf-viewer-lite"`.
 
 Requires Node.js 20 or newer. The package ships ES modules with TypeScript declarations and has no runtime
 dependencies.
